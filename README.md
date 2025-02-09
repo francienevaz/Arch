@@ -43,10 +43,12 @@ Save a list of explicitly installed packages for easy reinstallation:
 pacman -Qeq > pkglist.txt
 ```
 
-Part 2: Installation (Manual Method)
+## Part 2: Installation (Manual Method)
+
 Step 1: Prepare a Bootable USB
 
 Create a bootable USB drive using tools like Rufus (Windows) or Etcher (cross-platform).  Download the latest Arch Linux ISO from https://archlinux.org/download/.
+
 Step 2: Boot from USB and Connect to the Internet
 
 Restart your computer and boot from the USB drive. Ensure UEFI mode is enabled in the BIOS if you're installing on a UEFI system.
@@ -161,7 +163,7 @@ exit
 umount -R /mnt
 reboot
 ```
-Part 3: Installation (Automated Script)
+## Part 3: Installation (Automated Script)
 
 This is an example script.  Use with caution and understand what it does before running it.  Customize it to your needs.
 ```Bash
@@ -189,7 +191,8 @@ umount -R /mnt
 reboot
 ```
 Save this script (e.g., as install.sh), make it executable (chmod +x install.sh), and run it after booting from the Arch Linux USB.
-Part 4: Post-Installation
+
+## Part 4: Post-Installation
 
   Connect to Wi-Fi using nmcli or nmtui (for NetworkManager).
   Restore your dotfiles and package list.
